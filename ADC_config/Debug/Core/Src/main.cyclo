@@ -1,0 +1,8 @@
+../Core/Src/main.c:65:10:ADC_Read	1
+../Core/Src/main.c:84:6:read_all_sensors	1
+../Core/Src/main.c:114:5:main	1
+../Core/Src/main.c:161:6:SystemClock_Config	4
+../Core/Src/main.c:208:13:MX_ADC1_Init	3
+../Core/Src/main.c:255:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:288:13:MX_GPIO_Init	1
+../Core/Src/main.c:311:6:Error_Handler	1

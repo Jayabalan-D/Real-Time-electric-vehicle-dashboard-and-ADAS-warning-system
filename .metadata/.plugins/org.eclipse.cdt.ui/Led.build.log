@@ -1,0 +1,19 @@
+17:37:40 **** Incremental Build of configuration Debug for project Led ****
+make -j16 all 
+arm-none-eabi-gcc -o "Led.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Documents\Internship project\Led\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led.elf
+ 
+arm-none-eabi-size  Led.elf 
+arm-none-eabi-objdump -h -S Led.elf  > "Led.list"
+   text	   data	    bss	    dec	    hex	filename
+   4592	     12	   1572	   6176	   1820	Led.elf
+arm-none-eabi-objcopy  -O binary Led.elf  "Led.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Led.list
+ 
+Finished building: Led.bin
+ 
+
+17:37:41 Build Finished. 0 errors, 0 warnings. (took 982ms)
+

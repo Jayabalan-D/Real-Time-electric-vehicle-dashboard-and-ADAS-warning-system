@@ -1,0 +1,19 @@
+14:35:13 **** Incremental Build of configuration Debug for project ADC_config ****
+make -j16 all 
+arm-none-eabi-gcc -o "ADC_config.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Documents\Internship project\ADC_config\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_config.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_config.elf
+ 
+arm-none-eabi-size  ADC_config.elf 
+arm-none-eabi-objdump -h -S ADC_config.elf  > "ADC_config.list"
+   text	   data	    bss	    dec	    hex	filename
+  12020	     92	   2020	  14132	   3734	ADC_config.elf
+arm-none-eabi-objcopy  -O binary ADC_config.elf  "ADC_config.bin"
+Finished building: default.size.stdout
+ 
+Finished building: ADC_config.list
+ 
+Finished building: ADC_config.bin
+ 
+
+14:35:15 Build Finished. 0 errors, 0 warnings. (took 1s.453ms)
+
